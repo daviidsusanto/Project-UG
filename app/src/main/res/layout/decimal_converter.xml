@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e6269">
+
+    <TextView
+        android:id="@+id/juduldecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70sp"
+        android:fontFamily="serif"
+        android:text="Decimal Converter"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teksdecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/juduldecimal"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="serif"
+        android:text="Decimal : "
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/decimal"
+        android:layout_width="350sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/teksdecimal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:maxLength="8"
+        android:digits="0,1,2,3,4,5,6,7,8,9"
+        android:background="@drawable/buttonshapeisi"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/decimal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:text="TO"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teksbiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/decimal"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="40sp"
+        android:fontFamily="serif"
+        android:text="Biner : "
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/binary"
+        android:layout_width="350sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/teksbiner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:focusable="false"
+        android:background="@drawable/buttonshapeisi"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/teksoctal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/binary"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="serif"
+        android:text="Octal : "
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/octal"
+        android:layout_width="350sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/teksoctal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:focusable="false"
+        android:background="@drawable/buttonshapeisi"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tekshexa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/octal"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="serif"
+        android:text="Hexa : "
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/hexa"
+        android:layout_width="350sp"
+        android:layout_height="40sp"
+        android:layout_alignLeft="@+id/octal"
+        android:layout_alignStart="@+id/octal"
+        android:layout_below="@+id/tekshexa"
+        android:layout_marginTop="12dp"
+        android:focusable="false"
+        android:background="@drawable/buttonshapeisi"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@+id/hexa"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="90sp"/>
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_below="@+id/hexa"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="200sp"/>
+
+</RelativeLayout>
